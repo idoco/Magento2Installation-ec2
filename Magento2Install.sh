@@ -35,9 +35,9 @@ echo dbname=$NEWDBNAME > /home/ec2-user/dblogin.txt
 echo dbusername=$NEWDBUSER >> /home/ec2-user/dblogin.txt
 echo dbpassword=$PASS >> /home/ec2-user/dblogin.txt
 echo $PASS
-echo [client] > /ec2-user/.my.cnf
-echo user=root >> /ec2-user/.my.cnf
-echo password="\"$password"\" >> /ec2-user/.my.cnf
+echo [client] > /home/ec2-user/.my.cnf
+echo user=root >> /home/ec2-user/.my.cnf
+echo password="\"$password"\" >> /home/ec2-user/.my.cnf
 
 #Installing Composer command
 cd /tmp
